@@ -1,1 +1,9 @@
 <p>contact-list works!</p>
+
+<ul class="heroes">
+   <li *ngFor="let c of contacts">
+    <a routerLink="/contacts/{{c.id}}">
+      <span>#{{c.id}}</span>  {{c.name}}
+    </a>
+  </li>
+</ul>
